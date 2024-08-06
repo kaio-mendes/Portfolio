@@ -1,0 +1,15 @@
+footer {
+color: white;
+padding: 1em;
+text-align: center;
+font-family: "Open Sans", sans-serif;
+margin-top: 5rem;
+justify-content: center;
+display: flex;
+}
+
+
+.copy_right span {
+font-weight: bold;
+color: #ffbb33;
+}

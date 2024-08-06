@@ -1,0 +1,40 @@
+.projects {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    text-align: center; 
+}
+
+.projects h1 {
+    font-size: 2rem; 
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 2rem; 
+}
+
+.my_projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.show {
+    background-color: #01106496;
+    padding: 8rem;
+    margin: 1rem;
+    text-align: center; 
+    cursor: pointer;
+    box-sizing: border-box;
+    
+}
+
+
+.show:hover{
+    background-color:#011064;
+}
+
+.show h1:hover{
+    color: black;
+}

@@ -1,0 +1,120 @@
+.container {
+    display: flex;
+    align-items: flex-start; /* Alinha os itens ao topo */
+    justify-content: space-between; /* Distribui o espaço entre os itens */
+    margin: 5rem; /* Margem ao redor do contêiner */
+    margin-top: 5em;
+}
+
+.introduction {
+    color: white;
+    font-size: 2rem;
+    flex: 1; /* Permite que a introdução ocupe o espaço disponível */
+    margin-right: 2rem; /* Espaço entre a introdução e a imagem do perfil */
+
+}
+
+.introduction p {
+    font-family: "Nunito", sans-serif;
+}
+
+.text {
+    text-transform: uppercase;
+}
+
+.introduction span {
+    text-transform: capitalize;
+    font-size: 3rem;
+    padding: 0.3rem 0;
+    display: inline-block;
+    color: #3178c6;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+}
+
+.button {
+    display: inline-block;
+    width: 10rem;
+    height: 3rem;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+    font-family: "Nunito", sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #7ab080;
+    text-align: center;
+    line-height: 3rem;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.button:hover {
+    background-color: #df8b64;
+}
+
+.social {
+    margin-top: 3rem;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.social img {
+    height: 2.5rem;
+    cursor: pointer;
+}
+
+.profile_img img {
+    height: 15rem;
+    margin-right: 15rem;
+}
+
+.resume{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 3rem;
+    font-family: "Nunito", sans-serif;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.resume h1{
+    color: #ffa500;
+    margin-bottom: 1rem;
+}
+
+.resume span{
+    color: rgba(255, 166, 0, 0.815);
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.profile img{
+    height: 20rem;
+}
+
+.button a{
+    text-decoration: none;
+    color: white;
+}
+
+.hey{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}

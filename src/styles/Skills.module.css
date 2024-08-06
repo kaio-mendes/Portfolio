@@ -1,0 +1,26 @@
+.skills {
+    text-align: center;
+    padding: 2rem; 
+    margin-top: 8rem;
+}
+
+.skills h1 {
+    margin: 0; 
+    font-size: 2rem; 
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+}
+
+.abilities {
+    display: flex;
+    justify-content: center; 
+    gap: 3rem; 
+    flex-wrap: wrap; 
+    margin-top: 1rem; 
+}
+
+.abilities img {
+    height: 4rem; 
+    width: auto; 
+}

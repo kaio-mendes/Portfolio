@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1f252d;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+}
+
+ul{
+    display: flex;
+}
+
+.list{
+    gap: 10rem;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.list li{
+    list-style-type: none;
+}
+
+.list li a{
+    color: white;
+    text-decoration: none;
+}
+
+.list li a:hover{
+    color: #7ab080;
+}
+
+.Error404{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+}
+
+.Error404 p{
+    text-decoration: underline 5px solid rgb(229, 229, 255);
+}
+

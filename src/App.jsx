@@ -15,9 +15,9 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/resume' element={<Resume />} />
-        <Route path='/projects' element={<Projects />} />
-        <Route path='/email' element={<Email />} />
+        <Route path='/https://main--portfoliokaiomendes.netlify.app/resumeesume' element={<Resume />} />
+        <Route path='/https://main--portfoliokaiomendes.netlify.app/projects' element={<Projects />} />
+        <Route path='https://main--portfoliokaiomendes.netlify.app/email' element={<Email />} />
         <Route path='*' element={<Erro_404/>} />
       </Routes>
     </BrowserRouter>

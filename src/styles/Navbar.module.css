@@ -15,15 +15,18 @@ nav{
     align-items: center;
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 ul{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .list{
     gap: 10rem;
-    margin-top: 1rem;
+    margin: 1rem;
     font-size: 1.2rem;
 }
 
@@ -38,6 +41,14 @@ ul{
 
 .list li a:hover{
     color: #7ab080;
+}
+
+@media (max-width: 600px) {
+    .list{
+        gap: 5rem;
+        margin-bottom: -3rem;
+        margin-top: -0.5rem;
+    }
 }
 
 .Error404{

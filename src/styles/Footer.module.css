@@ -28,7 +28,7 @@ color: #ffbb33;
 form{
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 70%;
 }
 
 form input,textarea{
@@ -90,4 +90,16 @@ form textarea{
     margin-bottom: -5rem;
     border-radius: 2rem;
     align-self: center;
+}
+
+.whats {
+    position: fixed; 
+    bottom: 1rem;    
+    right: 2rem;     
+    z-index: 1000;   
+}
+
+.whats img {
+    height: 4rem;    
+    cursor: pointer; 
 }

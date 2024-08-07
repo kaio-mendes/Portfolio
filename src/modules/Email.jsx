@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import styles from '../styles/Footer.module.css';
-
+import whats from '../img/whats.png'
 function Email() {
     const [enviado, setEnviado] = useState(false);
     const [erro, setErro] = useState(false);
@@ -47,11 +47,11 @@ function Email() {
             <form
                 onSubmit={handleSubmit}
             >
-                <label htmlFor="name">Nome*</label>
+                <label htmlFor="name">Name*</label>
                 <input
                     id="name"
                     type="text"
-                    placeholder="Nome"
+                    placeholder="Name"
                     name="name"
                     className={styles.name}
                     required
@@ -64,15 +64,15 @@ function Email() {
                     name="email"
                     required
                 />
-                <label htmlFor="message">Mensagem*</label>
+                <label htmlFor="message">Message*</label>
                 <textarea
                     id="message"
-                    placeholder="Mensagem"
+                    placeholder="Message"
                     name="message"
                     required
                 />
 
-                <button type="submit">Enviar</button>
+                <button type="submit">Send</button>
 
                 <input type="hidden" name="_subject" value="Novo Contato - Portfólio" />
                 <input type="text" name="_honey" className={styles.honey} />
@@ -82,6 +82,11 @@ function Email() {
 
             {enviado && <div className={styles.alert}>Mensagem enviada</div>}
             {erro && <div className={styles.alert}>Houve um erro ao enviar a mensagem</div>}
+            <div className={styles.whats}>
+            <a href="https://wa.me/14988104457" target="_blank" rel="whatsapp">
+                    <img src={whats} alt="Me mande uma mensagem" />
+            </a>
+            </div>
         </div>
     );
 }

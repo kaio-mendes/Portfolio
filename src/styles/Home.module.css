@@ -4,6 +4,7 @@
     justify-content: space-between; /* Distribui o espaço entre os itens */
     margin: 5rem; /* Margem ao redor do contêiner */
     margin-top: 5em;
+    flex-wrap: wrap;
 }
 
 .introduction {
@@ -70,6 +71,7 @@
 .profile_img img {
     height: 15rem;
     margin-right: 15rem;
+    margin-top: 3rem;
 }
 
 .resume{

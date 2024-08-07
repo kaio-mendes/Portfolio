@@ -13,3 +13,81 @@ display: flex;
 font-weight: bold;
 color: #ffbb33;
 }
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+form input,textarea{
+    margin-top: 2rem;
+    padding: 1rem;
+    resize: none;
+    font-family: "Nunito", sans-serif;
+    outline: none;
+    border-radius: 5px;
+    font-size: 15px;
+    border: none;
+}
+
+form label{
+    margin-bottom: -1rem;
+    margin-top: 1rem;
+}
+
+form textarea{
+    height: 10rem;
+}
+
+.name{
+    text-transform: capitalize;
+}
+
+
+.container button{
+    display: inline-block;
+    width: 10rem;
+    height: 3rem;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+    font-family: "Nunito", sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #7ab080;
+    text-align: center;
+    line-height: 3rem;
+    text-decoration: none;
+    font-weight: 600;
+    align-self: center; 
+}
+
+.container button:hover {
+    background-color: #df8b64;
+}
+
+.honey{
+    display: none;
+}
+
+.alert{
+    margin-top: 1rem;
+    background-color: rgba(0, 0, 0, 0.247);
+    padding: 1rem;
+    margin-bottom: -5rem;
+    border-radius: 2rem;
+    align-self: center;
+}

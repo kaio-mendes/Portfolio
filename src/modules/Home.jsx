@@ -13,7 +13,7 @@ function Home() {
         <p className={styles.text}>Hello, I am</p>
         <span>Kaio Mendes</span>
         <p>Web and Mobile Developer</p>
-        <a  href="https://api.whatsapp.com/send/?phone=5514988104457&text=Ol%C3%A1!%20Me%20interessei%20pelo%20seu%20portf%C3%B3lio,%20vamos%20conversar?&type=phone_number&app_absent=0" className={styles.button}>Lets Talk</a>
+        <a  href="/email" className={styles.button}>Lets Talk</a>
 
         <div className={styles.social}>
           <p className={styles.net}>Check out my social networks!</p>

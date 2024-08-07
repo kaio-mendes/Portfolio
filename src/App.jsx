@@ -6,7 +6,6 @@ import Resume from './modules/Resume';
 import { Route, BrowserRouter, Routes } from 'react-router-dom';
 import Erro_404 from './assets/Erro_404'
 import Footer from './modules/Footer';
-import Email from './modules/Email';
 
 function App() {
   return (
@@ -15,9 +14,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/https://main--portfoliokaiomendes.netlify.app/resumeesume' element={<Resume />} />
-        <Route path='/https://main--portfoliokaiomendes.netlify.app/projects' element={<Projects />} />
-        <Route path='https://main--portfoliokaiomendes.netlify.app/email' element={<Email />} />
+        <Route path='/resume' element={<Resume />} />
+        <Route path='/projects' element={<Projects />} />
         <Route path='*' element={<Erro_404/>} />
       </Routes>
     </BrowserRouter>

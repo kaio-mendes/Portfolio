@@ -12,11 +12,11 @@ const Navbar = () => {
   };
   return (
     <nav className={styles.navbar}>
-      <h1>
-        <a href="/">
+      <a href="/">
+        <h1>
           <span>Kaio</span> Mendes.
-        </a>
-      </h1>
+        </h1>
+      </a>
 
       <ul className={styles.items}>
         <li>

@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --primary: #141c3a;
+  --secundary: #afb2ba;
+  --button_hover: #1a73e8;
+  --statics: #f3f3f3;
+  --background: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 20px;
+  color: var(--primary);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  background: var(--background);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5 {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.MyButton {
+  position: relative;
+  border-radius: 45px;
+  min-width: 145px;
+  padding: 10px;
+  min-height: 40px;
+  border: 2px black solid;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.MyButton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out, background-color 0.3s;
+  z-index: -2;
+}
+
+.MyButton:hover::before {
+  transform: scaleX(1);
+  background-color: var(--button_hover);
+}
+
+.MyButton:hover {
+  color: var(--background);
+  border-color: var(--background);
+}
+
+@media (max-width: 768px) {
+  .MyButton {
+    min-width: 120px;
+    padding: 10px;
+    min-height: 30px;
+    font-size: 14px;
+  }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: var(--primary) !important;
+  transition: color 0.3s !important;
+  border-radius: 100%;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  color: var(--button_hover) !important;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 25px !important;
+}
+
+@media (max-width: 768px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none !important;
+  }
+}

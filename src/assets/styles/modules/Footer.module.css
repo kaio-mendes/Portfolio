@@ -1,0 +1,34 @@
+.footer {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  position: relative;
+  color: var(--primary);
+}
+
+.items {
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+.items ul {
+  display: flex;
+  justify-content: space-between;
+  width: 20rem;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+.items a {
+  color: var(--primary);
+}
+
+.footer span {
+  color: var(--button_hover);
+}

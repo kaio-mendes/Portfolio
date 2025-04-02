@@ -5,7 +5,7 @@ import Navbar from "./modules/Navbar";
 
 function App() {
   return (
-    <div className="teste">
+    <div className="App">
       <Navbar />
       <Home />
       <Footer />

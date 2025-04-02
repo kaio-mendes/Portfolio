@@ -1,0 +1,5 @@
+.App {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 16px; /* Opcional: garante um pequeno espaçamento nas laterais em telas menores */
+}

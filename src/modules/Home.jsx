@@ -10,7 +10,7 @@ const Home = () => {
     <article className={styles.container}>
       <div className={styles.welcome}>
         <h1>
-          Criando experiências digitais <span>impactantes</span>
+          Creating impactful digital <span>experiences</span>
         </h1>
         <p>
           I create and develop simple and functional solutions with focus and

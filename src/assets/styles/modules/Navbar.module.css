@@ -14,7 +14,6 @@
   font-style: none;
   text-decoration: none;
 }
-
 .navbar span {
   color: var(--secundary);
 }
@@ -59,6 +58,24 @@
 
 .items li a:hover::after {
   transform: scaleX(1);
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+}
+
+.background {
+  margin-right: 1rem;
+  height: 3rem;
+  width: 3rem;
+  border: none;
+  font-size: 2rem;
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 768px) {

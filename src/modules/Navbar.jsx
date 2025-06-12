@@ -2,8 +2,6 @@ import React from "react";
 import styles from "../assets/styles/modules/Navbar.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-
-import MyButton from "../components/Buttons";
 const Navbar = () => {
   const redirect = () => {
     window.open(

@@ -1,4 +1,3 @@
-import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -29,37 +28,39 @@ const Skills = () => {
   return (
     <div className={styles.sliders}>
       <h1>Skills:</h1>
-      <Swiper
-        spaceBetween={20}
-        loop={true}
-        className={styles.swipers}
-        navigation
-        modules={[Navigation]}
-        breakpoints={{
-          320: {
-            slidesPerView: 3, // 2 slides para telas pequenas
-          },
-          768: {
-            slidesPerView: 3, // 3 slides para telas médias (tablets)
-          },
-          1024: {
-            slidesPerView: 5, // 5 slides para telas grandes
-          },
-        }}
-      >
-        {skills.map((item) => (
-          <SwiperSlide key={item.id} className={styles.swiperSlide}>
-            <div className={styles.item}>
-              <FontAwesomeIcon
-                icon={item.icon}
-                size="2x"
-                className={styles.icons}
-              />
-              <p>{item.text}</p>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+      <div className={styles.slides}>
+        <Swiper
+          spaceBetween={20}
+          loop={true}
+          className={styles.swipers}
+          navigation
+          modules={[Navigation]}
+          breakpoints={{
+            320: {
+              slidesPerView: 3,
+            },
+            768: {
+              slidesPerView: 3,
+            },
+            1024: {
+              slidesPerView: 5,
+            },
+          }}
+        >
+          {skills.map((item) => (
+            <SwiperSlide key={item.id} className={styles.swiperSlide}>
+              <div className={styles.item}>
+                <FontAwesomeIcon
+                  icon={item.icon}
+                  size="2x"
+                  className={styles.icons}
+                />
+                <p>{item.text}</p>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
     </div>
   );
 };

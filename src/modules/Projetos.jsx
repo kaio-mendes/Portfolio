@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
@@ -33,7 +33,17 @@ const Projetos = () => {
   ];
 
   const [project, setProject] = useState(null);
+  useEffect(() => {
+    if (project) {
+      document.body.style.overflow = "hidden"; // bloqueia rolagem
+    } else {
+      document.body.style.overflow = "auto"; // libera rolagem
+    }
 
+    return () => {
+      document.body.style.overflow = "auto"; // garante limpeza
+    };
+  }, [project]);
   function openProject(item) {
     setProject(item);
   }
@@ -42,7 +52,7 @@ const Projetos = () => {
     <div className={styles.projetos}>
       <h1 id="projects">My Projects:</h1>
       <Swiper
-        spaceBetween={30} // Aumente o spaceBetween para maior espaçamento entre os slides
+        spaceBetween={30}
         loop={true}
         className={styles.sliders}
         navigation
@@ -50,24 +60,28 @@ const Projetos = () => {
         breakpoints={{
           320: {
             slidesPerView: 1,
-            spaceBetween: 10, // Menos espaço para telas pequenas
+            spaceBetween: 10,
           },
           768: {
             slidesPerView: 2,
-            spaceBetween: 20, // Espaço maior para telas médias
+            spaceBetween: 20,
           },
           1024: {
             slidesPerView: 4,
-            spaceBetween: 30, // Espaço ainda maior para telas grandes
+            spaceBetween: 30,
           },
         }}
       >
         {projects.map((item) => (
-          <SwiperSlide key={item.id} className={styles.swiperSlide}>
+          <SwiperSlide
+            key={item.id}
+            className={styles.swiperSlide}
+            onClick={() => openProject(item)}
+          >
             <div className={styles.item}>
               <img src={item.img} alt={item.text} />
               <div className={styles.show}>
-                <a onClick={() => openProject(item)}>
+                <a>
                   <p>{item.text}</p>
                 </a>
               </div>

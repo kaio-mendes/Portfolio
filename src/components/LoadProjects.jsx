@@ -1,6 +1,8 @@
 import style from "../assets/styles/components/LoadProjects.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
 
 const LoadProjects = ({ openProject, project }) => {
   return (
@@ -15,11 +17,26 @@ const LoadProjects = ({ openProject, project }) => {
         </div>
         <div className={style.container}>
           <div className={style.img}>
-            <img src={project.img} alt={project.text} />
+            <Swiper
+              key={project.id}
+              loop={true}
+              navigation
+              modules={[Navigation]}
+            >
+              {project.img.map((img, index) => (
+                <SwiperSlide key={index}>
+                  <img
+                    src={img}
+                    alt={`${project.text} ${index + 1}`}
+                    className={style.projectImg}
+                  />
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
           <div className={style.informacoes}>
             <h1>{project.text}</h1>
-            <h2>Descrição:</h2>
+            <h2>Description:</h2>
             <p>{project.descricao}</p>
             <div className={style.tecnologias}>
               {project.tecnologias.map((tech, index) => (
@@ -27,7 +44,7 @@ const LoadProjects = ({ openProject, project }) => {
               ))}
             </div>
             <div className={style.link}>
-              <a href={project.href}>Visite o site</a>
+              {project.href ? <a href={project.href}>Visit site</a> : ""}
             </div>
           </div>
         </div>

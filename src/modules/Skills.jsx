@@ -23,6 +23,7 @@ const Skills = () => {
     { id: 5, icon: faNodeJs, text: "Node.js" },
     { id: 6, icon: faHtml5, text: "HTML" },
     { id: 7, icon: faCss, text: "CSS" },
+    { id: 8, icon: faReact, text: "ReactNative" },
   ];
 
   return (

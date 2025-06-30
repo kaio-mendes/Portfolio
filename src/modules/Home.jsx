@@ -4,7 +4,6 @@ import Skills from "./Skills";
 import Projetos from "./Projetos";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
-
 const Home = () => {
   return (
     <article className={styles.container}>
@@ -36,10 +35,7 @@ const Home = () => {
       <div className={styles.cv}>
         <h1>CV:</h1>
         <div className={styles.curriculo}>
-          <a
-            href="/src/assets/downloads/KaioMendes-cv.pdf"
-            download="KaioMendes-cv.pdf"
-          >
+          <a href="/KaioMendes-cv.pdf" download="KaioMendes-cv.pdf">
             Download CV
             <FontAwesomeIcon icon={faDownload} />
           </a>

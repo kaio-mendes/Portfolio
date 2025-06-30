@@ -6,6 +6,28 @@
   --button_hover: #1a73e8;
   --statics: #f3f3f3;
   --background: #ffffff;
+  --underline-color: var(--primary);
+  --link-button: #111111;
+  --project-background: white;
+  --tech-badge-bg: #c9c9c9;
+  --link-bg: #141c3a;
+  --link-hover-bg: #001a79ad;
+  --button-border-color: #000000;
+}
+
+body.dark {
+  --primary: #d0d4e6;
+  --secundary: #8a8f9e;
+  --button_hover: #5393ff;
+  --statics: #222831;
+  --background: #121212;
+  --link-button: #ffffff;
+  --underline-color: #ffffff;
+  --button-border-color: #ffffff;
+  --project-background: #1a1a1a;
+  --tech-badge-bg: #333333;
+  --link-bg: #ffffff;
+  --link-hover-bg: #cccccc;
 }
 
 * {
@@ -37,7 +59,7 @@ h5 {
   min-width: 145px;
   padding: 10px;
   min-height: 40px;
-  border: 2px black solid;
+  border: 2px var(--underline-color) solid;
   background-color: transparent;
   cursor: pointer;
   font-size: 1rem;
@@ -46,6 +68,7 @@ h5 {
   align-items: center;
   justify-content: space-between;
   overflow: hidden;
+  color: var(--link-button);
 }
 
 .MyButton::before {

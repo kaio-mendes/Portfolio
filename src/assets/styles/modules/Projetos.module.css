@@ -60,7 +60,7 @@
 }
 
 .show:hover {
-  background-color: var(--primary);
+  background-color: #141c3a;
 }
 
 .item:hover .show {

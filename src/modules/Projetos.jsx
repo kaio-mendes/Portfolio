@@ -7,7 +7,6 @@ import bookshelf_img from "../image/searchBooks.png";
 import github_finder from "../image/github_finder.png";
 import userSearch from "../image/userSearch.png";
 import MeusLivros from "../image/MeusLivros.png";
-
 import Home from "../image/workout/home.jpeg";
 import Metas from "../image/workout/metas.jpeg";
 import novoTreino from "../image/workout/novoTreino.jpeg";

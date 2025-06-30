@@ -16,7 +16,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.616);
+  background-color: #0000009c;
   position: fixed;
   z-index: 100;
 }
@@ -25,7 +25,8 @@
   position: fixed;
   height: 60%;
   width: 80%;
-  background-color: white;
+  background-color: var(--project-background);
+
   border-radius: 1rem;
   top: 50%;
   left: 50%;
@@ -118,7 +119,8 @@
 }
 
 .tecnologias p {
-  background-color: #c9c9c9;
+  background-color: var(--tech-badge-bg);
+
   width: 10rem;
   padding: 0.7rem;
   border-radius: 45px;
@@ -132,17 +134,17 @@
 }
 
 .link a {
-  background-color: #141c3a;
+  background-color: var(--link-bg);
+  color: var(--background);
   width: 10rem;
   padding: 0.7rem;
   border-radius: 45px;
   text-align: center;
   text-decoration: none;
-  color: white;
 }
 
 .link a:hover {
-  background-color: #001a79ad;
+  background-color: var(--link-hover-bg);
   transition: background-color 0.5s ease;
 }
 

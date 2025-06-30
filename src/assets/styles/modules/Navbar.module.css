@@ -101,4 +101,17 @@
   .items {
     display: none;
   }
+  .buttonsHome {
+    width: auto;
+    gap: 1rem;
+  }
+
+  .ThemeMode {
+    font-size: 1.5rem;
+  }
+
+  .MyButton {
+    min-width: 110px;
+    font-size: 0.9rem;
+  }
 }

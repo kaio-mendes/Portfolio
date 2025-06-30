@@ -1,6 +1,6 @@
 import styles from "../assets/styles/modules/Navbar.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight, faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { useContext } from "react";
 import { ThemeContext } from "../components/themeContext";
 import { GoSun } from "react-icons/go";

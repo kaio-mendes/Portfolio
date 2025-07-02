@@ -45,6 +45,14 @@
 
     margin: 0 auto;
   }
+  .sliders {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 5rem;
+  }
+  .sliders h1 {
+    margin: 20px;
+  }
 }
 
 @media (max-width: 768px) {

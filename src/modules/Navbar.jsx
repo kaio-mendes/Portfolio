@@ -32,7 +32,12 @@ const Navbar = () => {
       </ul>
 
       <div className={styles.buttonsHome}>
-        <button className="MyButton" onClick={redirect}>
+        <button
+          className="MyButton"
+          onClick={redirect}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Let's Talk
           <FontAwesomeIcon icon={faArrowRight} />
         </button>

@@ -16,7 +16,13 @@ const Home = () => {
           precision.
         </p>
         <div className={styles.email} id="about">
-          <p>kaio.mendes1911@gmail.com</p>
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=kaio.mendes1911@gmail.com&su=Olá&body=Olá+Kaio%2C+gostaria+de+falar+com+você!"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <p>kaio.mendes1911@gmail.com</p>
+          </a>
         </div>
       </div>
       <div className={styles.about}>
@@ -35,7 +41,12 @@ const Home = () => {
       <div className={styles.cv}>
         <h1>CV:</h1>
         <div className={styles.curriculo}>
-          <a href="/KaioMendes-cv.pdf" download="KaioMendes-cv.pdf">
+          <a
+            href="/KaioMendes-cv.pdf"
+            download="KaioMendes-cv.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Download CV
             <FontAwesomeIcon icon={faDownload} />
           </a>

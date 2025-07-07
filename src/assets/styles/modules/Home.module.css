@@ -88,6 +88,12 @@
   border-color: var(--background);
 }
 
+.email a {
+  text-decoration: none;
+  font-style: none;
+  color: inherit;
+}
+
 .about {
   font-size: 1.5rem;
   margin-top: 5rem;
@@ -164,6 +170,7 @@
 @media (max-width: 768px) {
   .welcome {
     width: 90%;
+    margin: 20px;
   }
   .welcome h1 {
     font-size: 3rem;
@@ -176,5 +183,10 @@
   }
   .about {
     font-size: 1rem;
+  }
+  .cv {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 5rem;
   }
 }

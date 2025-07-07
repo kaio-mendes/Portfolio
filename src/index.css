@@ -101,6 +101,9 @@ h5 {
     min-height: 30px;
     font-size: 14px;
   }
+  body {
+    margin: 0;
+  }
 }
 
 .swiper-button-prev,

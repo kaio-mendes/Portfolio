@@ -71,12 +71,18 @@
 }
 
 @media (max-width: 1024px) {
+  .projetos {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   .projetos img {
     height: 10rem;
     width: 20rem;
   }
   .projetos h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    margin: 20px;
   }
 }
 

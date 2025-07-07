@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
@@ -7,10 +7,8 @@ import bookshelf_img from "../image/searchBooks.png";
 import github_finder from "../image/github_finder.png";
 import userSearch from "../image/userSearch.png";
 import MeusLivros from "../image/MeusLivros.png";
-import Home from "../image/workout/home.jpeg";
-import Metas from "../image/workout/metas.jpeg";
-import novoTreino from "../image/workout/novoTreino.jpeg";
-import Treinos from "../image/workout/treinos.jpeg";
+import Home from "../image/workout/HomeMetas.jpg";
+import Treinos from "../image/workout/Treinos.jpg";
 import styles from "../assets/styles/modules/Projetos.module.css";
 import LoadProjects from "../components/LoadProjects";
 
@@ -38,7 +36,7 @@ const Projetos = () => {
 
     {
       id: 3,
-      img: [Home, Metas, novoTreino, Treinos],
+      img: [Home, Treinos],
       text: "Workout",
       descricao:
         "A mobile workout app built with React Native and TypeScript that helps users create, track, and customize their training routines. The app offers a clean and intuitive interface for logging exercises, setting goals, and monitoring progress. It supports various workout types, including strength training, cardio, and flexibility exercises. With offline capabilities and personalized workout plans, it’s ideal for fitness enthusiasts looking to stay motivated and organized on the go",
@@ -49,13 +47,13 @@ const Projetos = () => {
   const [project, setProject] = useState(null);
   useEffect(() => {
     if (project) {
-      document.body.style.overflow = "hidden"; // bloqueia rolagem
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = "auto"; // libera rolagem
+      document.body.style.overflow = "auto";
     }
 
     return () => {
-      document.body.style.overflow = "auto"; // garante limpeza
+      document.body.style.overflow = "auto";
     };
   }, [project]);
   function openProject(item) {

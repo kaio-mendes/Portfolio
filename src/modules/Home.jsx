@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "../assets/styles/modules/Home.module.css";
 import Skills from "./Skills";
 import Projetos from "./Projetos";
@@ -36,8 +35,10 @@ const Home = () => {
           and growing. My goal is to contribute to impactful digital projects.
         </p>
       </div>
-      <Skills />
-      <Projetos />
+      <div className={styles.sliders}>
+        <Skills />
+        <Projetos />
+      </div>
       <div className={styles.cv}>
         <h1>CV:</h1>
         <div className={styles.curriculo}>

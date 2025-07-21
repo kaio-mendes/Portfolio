@@ -9,7 +9,7 @@ body.dark {
 }
 @media (min-width: 1024px) {
   .App {
-    max-width: 1630px;
+    max-width: 1600px;
     margin: 0 auto;
     padding: 0 16px;
   }

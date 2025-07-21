@@ -1,4 +1,3 @@
-/* Container principal do bloco de slides */
 .sliders {
   margin: 1rem 1rem 5rem;
 }
@@ -8,19 +7,12 @@
   font-size: 2rem;
 }
 
-/* Container do Swiper */
 .slides {
   margin-bottom: 5rem;
   width: 100%;
-  overflow: hidden; /* Evita scroll horizontal no mobile */
+  overflow: hidden;
 }
 
-/* Wrapper do Swiper */
-.swipers {
-  margin: 1rem;
-}
-
-/* Cada slide */
 .swiperSlide {
   display: flex;
   justify-content: center;
@@ -28,7 +20,6 @@
   text-align: center;
 }
 
-/* Estilo base dos itens */
 .item {
   display: flex;
   justify-content: space-between;
@@ -77,10 +68,17 @@
   }
 
   .slides {
-    padding: 0 1rem;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
   }
 
   .swipers {
-    margin: 0 -3rem;
+    width: 100%;
+    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 1rem;
+    box-sizing: border-box;
   }
 }

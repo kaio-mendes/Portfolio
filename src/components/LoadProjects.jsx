@@ -5,6 +5,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 
 const LoadProjects = ({ openProject, project }) => {
+  console.log("Imagens do projeto:", project.img);
+
   return (
     <div className={style.content}>
       <div className={style.projects}>

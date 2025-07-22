@@ -12,6 +12,10 @@ import Treinos from "../image/workout/Treinos.jpg";
 import styles from "../assets/styles/modules/Projetos.module.css";
 import LoadProjects from "../components/LoadProjects";
 
+import HomeCar from "../image/concessionaria/Home.jpg";
+import FooterCar from "../image/concessionaria/Footer.jpg";
+import MobileCar from "../image/concessionaria/MobileCar.jpg";
+
 const Projetos = () => {
   const projects = [
     {
@@ -41,6 +45,15 @@ const Projetos = () => {
       descricao:
         "A mobile workout app built with React Native and TypeScript that helps users create, track, and customize their training routines. The app offers a clean and intuitive interface for logging exercises, setting goals, and monitoring progress. It supports various workout types, including strength training, cardio, and flexibility exercises. With offline capabilities and personalized workout plans, it’s ideal for fitness enthusiasts looking to stay motivated and organized on the go",
       tecnologias: ["Typescript", "ReactNative"],
+    },
+    {
+      id: 4,
+      img: [HomeCar, FooterCar, MobileCar],
+      href: "https://dealership-five.vercel.app/",
+      text: "Dealership",
+      descricao:
+        "This project was developed with the purpose of recreating the interface of a local car dealership, solely for study and web development practice.It has no commercial affiliation, does not generate profit, and does not officially represent the mentioned company.It is an exercise aimed at improving skills in HTML, CSS, JavaScript, and React, focusing on responsive design, componentization, and best practices in modern interface development.",
+      tecnologias: ["Javascript", "React", "Figma"],
     },
   ];
 

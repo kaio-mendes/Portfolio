@@ -3,18 +3,17 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import bookshelf_img from "../image/searchBooks.png";
-import github_finder from "../image/github_finder.png";
-import userSearch from "../image/userSearch.png";
-import MeusLivros from "../image/MeusLivros.png";
-import Home from "../image/workout/HomeMetas.jpg";
-import Treinos from "../image/workout/Treinos.jpg";
+import bookshelf_img from "../assets/image/searchBooks.png";
+import github_finder from "../assets/image/github_finder.png";
+import userSearch from "../assets/image/userSearch.png";
+import MeusLivros from "../assets/image/MeusLivros.png";
+import Home from "../assets/image/workout/HomeMetas.jpg";
+import Treinos from "../assets/image/workout/Treinos.jpg";
 import styles from "../assets/styles/modules/Projetos.module.css";
 import LoadProjects from "../components/LoadProjects";
 
-import HomeCar from "../image/concessionaria/Home.jpg";
-import FooterCar from "../image/concessionaria/Footer.jpg";
-import MobileCar from "../image/concessionaria/MobileCar.jpg";
+import HomeCar from "../assets/image/concessionaria/Home.jpg";
+import FooterCar from "../assets/image/concessionaria/Footer.jpg";
 
 const Projetos = () => {
   const projects = [
@@ -48,7 +47,7 @@ const Projetos = () => {
     },
     {
       id: 4,
-      img: [HomeCar, FooterCar, MobileCar],
+      img: [HomeCar, FooterCar],
       href: "https://dealership-five.vercel.app/",
       text: "Dealership",
       descricao:

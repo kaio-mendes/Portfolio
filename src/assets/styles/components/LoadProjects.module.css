@@ -23,10 +23,9 @@
 
 .projects {
   position: fixed;
-  height: 60%;
+  height: 80%;
   width: 80%;
   background-color: var(--project-background);
-
   border-radius: 1rem;
   top: 50%;
   left: 50%;
@@ -68,9 +67,8 @@
 
 .img {
   width: 800px;
-  height: 450px; /* controla a altura */
+  height: 600px;
   overflow: hidden;
-  border-radius: 0.5rem;
   display: flex;
   justify-content: center;
 }
@@ -78,10 +76,9 @@
 .img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
   border: none;
-  border: 1px solid rgba(0, 0, 0, 0.123);
 }
 
 .img .swiper,
@@ -120,7 +117,6 @@
 
 .tecnologias p {
   background-color: var(--tech-badge-bg);
-
   width: 10rem;
   padding: 0.7rem;
   border-radius: 45px;

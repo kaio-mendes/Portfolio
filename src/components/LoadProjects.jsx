@@ -3,20 +3,20 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
+import { useRef } from "react";
 
 const LoadProjects = ({ openProject, project }) => {
   console.log("Imagens do projeto:", project.img);
+  const modalRef = useRef();
 
+  const handleOutsideClick = (e) => {
+    if (modalRef.current && !modalRef.current.contains(e.target)) {
+      openProject();
+    }
+  };
   return (
-    <div className={style.content}>
-      <div className={style.projects}>
-        <div className={style.voltar}>
-          <FontAwesomeIcon
-            icon={faArrowLeft}
-            className={style.button}
-            onClick={openProject}
-          />
-        </div>
+    <div className={style.content} onClick={handleOutsideClick}>
+      <div className={style.projects} ref={modalRef}>
         <div className={style.container}>
           <div className={style.img}>
             <Swiper
